@@ -1,0 +1,93 @@
+@mixin _1600 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin _1480 {
+  @media (max-width: 1480px) {
+    @content;
+  }
+}
+
+@mixin _1280 {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin _1180 {
+  @media (max-width: 1180px) {
+    @content;
+  }
+}
+
+@mixin _1080 {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin _992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin _840 {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
+@mixin _767 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin _680 {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+
+@mixin _580 {
+  @media (max-width: 580px) {
+    @content;
+  }
+}
+
+@mixin _480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin _380 {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+
+/*  Viewports  */
+
+$tablet-width: 676px;
+$desktop-width: 1280px;
+$mobile-width-only: 540px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+/*  Colors  */
+
+:root {
+  --basic-main: #901021;
+  --wc: #d49400;
+  --elevator: #056a71;
+  --stairs: #164570;
+  --disable: #9ea7aa;
+  --exit: #bf2830;
+  --main-text: #000000;
+  --main-subtext: #616161;
+  --catalog: #b7b7b7;
+}

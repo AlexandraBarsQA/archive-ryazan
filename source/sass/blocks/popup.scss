@@ -1,0 +1,85 @@
+.popup__list {
+  position: fixed;
+  background-color: rgba(1, 1, 11, 0.35);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+}
+
+.popup__block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: auto;
+  background-color: #e6e6e6;
+  margin: auto;
+  z-index: 300;
+}
+
+.popup__img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 7%;
+  background-color: #e6e6e6;
+  //box-shadow: 0 8px 37px 5px #595a5a;
+  overflow: auto;
+  margin: auto;
+}
+
+.popup__btn-close {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  cursor: pointer;
+  outline: none;
+  font-size: 0;
+  border: 0;
+  z-index: 350;
+}
+
+.popup__btn-close::before,
+.popup__btn-close::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 5px;
+  background-color: #e6e6e6;
+}
+
+.popup__btn-close::before {
+  transform: rotate(45deg);
+}
+
+.popup__btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.popup__btn-close:hover::before,
+.popup__btn-close:focus::before {
+  background-color: rgba(230, 230, 230, 0.7);
+}
+
+.popup__btn-close:hover::after,
+.popup__btn-close:focus::after {
+  background-color: rgba(230, 230, 230, 0.7);
+}
+
+.popup__btn-close:active::before,
+.popup__btn-close:active::after {
+  background-color: rgba(230, 230, 230, 0.25);
+}
+
+.popup p {
+  position: relative;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 26 / 25 * 1;
+  color: #392424;
+  text-align: center;
+  margin-top: 25px;
+}

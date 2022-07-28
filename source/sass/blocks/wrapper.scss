@@ -1,0 +1,10 @@
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+/* .wrapper--inner {
+  display: block;
+  width: 760px;
+} */

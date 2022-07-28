@@ -1,0 +1,35 @@
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  column-gap: 50px;
+}
+
+.menu li {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+.menu a {
+  color: #f1e8c7;
+  text-decoration: none;
+}
+
+a.menu__link-active {
+  position: relative;
+  color: #ff6666;
+}
+
+a.menu__link-active::after {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 3px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(-45deg);
+  background-color: #ff6666;
+}

@@ -1,0 +1,36 @@
+.toggle-gallery {
+  position: absolute;
+  width: 1658px;
+  height: 2px;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 30;
+}
+
+.toggle-gallery__item {
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 23px;
+  top: -11.8px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  cursor: pointer;
+  z-index: 15;
+}
+
+.toggle-gallery__item--prev {
+  left: -52px;
+}
+
+.toggle-gallery__item--next {
+  right: -52px;
+  transform: scaleX(-1);
+}
+
+.toggle-gallery--photoarchive {
+  bottom: 80px;
+}

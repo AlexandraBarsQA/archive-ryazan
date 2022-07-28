@@ -1,0 +1,60 @@
+.block-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 417px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bgi) no-repeat 0 0 / 100% auto, #392424;
+}
+
+.block-slider__wrap {
+  display: flex;
+  width: 100%;
+  // background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 45px;
+
+  min-width: 0; // параметр, если слайдер swiper вставляется внутрь флех-элемента, чтобы слайдер работал правильно.
+}
+
+.block-slider__title {
+  width: 280px;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 26 / 25 * 1;
+  color: #cbcbcb;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.block-slider__title span {
+  display: block;
+  font-size: 42px;
+  color: #a95919;
+  font-variant: small-caps;
+  margin-top: 75px;
+}
+
+.block-slider__line {
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.block-slider__line::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: -12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(225, 255, 255, 0.5);
+}

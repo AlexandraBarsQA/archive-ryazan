@@ -1,0 +1,39 @@
+.announcement {
+  width: 100%;
+  background-image: url("../img/paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 43px;
+}
+
+.announcement__list {
+  display: grid;
+  grid-template-columns: repeat(3, 590px);
+  justify-content: space-between;
+}
+
+.announcement__list li {
+  font-family: inherit;
+  font-size: 34px;
+  line-height: 42 / 34 * 1;
+  color: #336599;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 43px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.announcement__list span {
+  display: block;
+  font-size: 25px;
+  color: #291b1b;
+  margin-bottom: 18px;
+}
+
+.announcement__list a {
+  color: #336599;
+}
