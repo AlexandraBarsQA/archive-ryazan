@@ -18,39 +18,6 @@ var swiper = new Swiper(".slider", {
   // Responsive breakpoints
 });
 
-/* var swiper = new Swiper(".slider", {
-  navigation: {
-    nextEl: ".slider__toggle--next.swiper-button-next",
-    prevEl: ".slider__toggle--prev.swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: progressbar,
-    clickable: true,
-  },
-  loop: true,
-  //autoHeight: true,
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  //spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    1080: {
-      loop: true,
-      slidesPerView: 2,
-      //spaceBetween: 20
-    },
-
-    // when window width is >= 640px
-    1920: {
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-}); */
-
 // Слайдер Фотоархива на странице About-archive
 
 var galleryThumbs = new Swiper(".photo-gallery", {
