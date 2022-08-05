@@ -27,7 +27,7 @@
           </a>
           <ul class="main-nav__menu menu">
             <li>
-              <a class="menu__link-active" title="">об архиве</a>
+              <a class="menu__link-active" title="">об&nbsp;архиве</a>
             </li>
             <li>
               <a href="new.html" title="">новости</a>
@@ -36,12 +36,18 @@
               <a href="#" title="">деятельность</a>
             </li>
             <li>
-              <a href="#" title="">услуги</a>
+              <a href="order.html" title="">услуги</a>
             </li>
             <li>
               <a href="#" title="">нса</a>
             </li>
+            <li>
+              <a href="reading-room.html" title="">аис анро</a>
+            </li>
           </ul>
+          <a class="main-nav__basket" href="order.html">
+            <span>5</span>
+          </a>
         </nav>
       </div>
     </header>
@@ -91,7 +97,7 @@
         </div>
 
         <section class="content-main__info">
-          <h1>— общая информация —</h1>
+          <h1>—&nbsp;общая информация&nbsp;—</h1>
           <h4 class="subtitle-main">Государственное казённое учреждение «Государственный архив Рязанской
             области» является одним из крупнейших региональных архивохранилищ
             Российской Федерации. В фондах архива сосредоточено почти 2 млн. дел
@@ -126,8 +132,9 @@
           </ol>
         </section>
       </article>
+
       <section class="photo-archive">
-        <h2>— фотоархив —</h2>
+        <h2>—&nbsp;фотоархив&nbsp;—</h2>
         <div class="photo-archive__list">
 
           <div class="gallery-desc swiper-container">
@@ -153,16 +160,19 @@
             </div>
           </div>
 
-          <div class="photo-gallery swiper-container">
+
+          <!-- Слайдер + модальное окно -->
+
+          <div class="photo-gallery swiper-container accordeonWrapper type_1">
             <div class="photo-gallery__wrapper swiper-wrapper">
 
-              <div class="photo-gallery__item photo-gallery__item--1 swiper-slide">
-                <a href="#0" title="">
+
+              <div class="photo-gallery__item photo-gallery__item--1 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
                   <img src="img/back_body-expert.jpg" alt="">
                 </a>
 
-                <!--
-                <div class="popup">
+                <div class="popup descElem">
                   <div class="popup__block">
                     <p>В 1926 году фонды архива разместились в Казанском соборе</p>
                     <div class="popup__img">
@@ -170,46 +180,107 @@
                     </div>
                     <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
                   </div>
-                </div> -->
+                </div>
 
               </div>
-              <div class="photo-gallery__item photo-gallery__item--2 swiper-slide">
-                <a href="#0" title="">
+
+              <div class="photo-gallery__item photo-gallery__item--2 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
                   <img src="img/back_body-machine.jpg" alt="">
                 </a>
+
+                <div class="popup descElem">
+                  <div class="popup__block">
+                    <p>В 1926 году фонды архива разместились в Казанском соборе</p>
+                    <div class="popup__img">
+                      <img src="img/back_body-machine.jpg" alt="">
+                    </div>
+                    <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
+                  </div>
+                </div>
+
               </div>
-              <div class="photo-gallery__item photo-gallery__item--3 swiper-slide">
-                <a href="#0" title="">
-                  <img src="img/back_body-project.jpg" alt="">
-                </a>
-              </div>
-              <div class="photo-gallery__item photo-gallery__item--4 swiper-slide">
-                <a href="#0" title="">
+
+              <div class="photo-gallery__item photo-gallery__item--2 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
                   <img src="img/back_body.jpg" alt="">
                 </a>
+
+                <div class="popup descElem">
+                  <div class="popup__block">
+                    <p>В 1926 году фонды архива разместились в Казанском соборе</p>
+                    <div class="popup__img">
+                      <img src="img/back_body.jpg" alt="">
+                    </div>
+                    <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
+                  </div>
+                </div>
+
               </div>
-              <div class="photo-gallery__item photo-gallery__item--5 swiper-slide">
-                <a href="#0" title="">
+
+              <div class="photo-gallery__item photo-gallery__item--3 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
+                  <img src="img/back_body-project.jpg" alt="">
+                </a>
+
+                <div class="popup descElem">
+                  <div class="popup__block">
+                    <p>В 1926 году фонды архива разместились в Казанском соборе</p>
+                    <div class="popup__img">
+                      <img src="img/back_body-project.jpg" alt="">
+                    </div>
+                    <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="photo-gallery__item photo-gallery__item--4 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
                   <img src="img/back_body-expert.jpg" alt="">
                 </a>
+
+                <div class="popup descElem">
+                  <div class="popup__block">
+                    <p>В 1926 году фонды архива разместились в Казанском соборе</p>
+                    <div class="popup__img">
+                      <img src="img/back_body-expert.jpg" alt="">
+                    </div>
+                    <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
+                  </div>
+                </div>
+
               </div>
-              <div class="photo-gallery__item photo-gallery__item--6 swiper-slide">
-                <a href="#0" title="">
+
+              <div class="photo-gallery__item photo-gallery__item--5 swiper-slide elemAccordeon">
+                <a class="headingElem" href="#0" title="">
                   <img src="img/back_body-machine.jpg" alt="">
                 </a>
+
+                <div class="popup descElem">
+                  <div class="popup__block">
+                    <p>В 1926 году фонды архива разместились в Казанском соборе</p>
+                    <div class="popup__img">
+                      <img src="img/back_body-machine.jpg" alt="">
+                    </div>
+                    <button class="popup__btn-close" type="button" aria-label="Close">Закрыть</button>
+                  </div>
+                </div>
+
               </div>
 
             </div>
             <div class="swiper-pagination"></div>
+
           </div>
-        </div>
 
-        <div class="photo-archive__toggle toggle-gallery toggle-gallery--photoarchive">
-          <div class="toggle-gallery__item toggle-gallery__item--next swiper-button-next"></div>
-          <div class="toggle-gallery__item toggle-gallery__item--prev swiper-button-prev"></div>
-        </div>
+          <div class="photo-archive__toggle toggle-gallery toggle-gallery--photoarchive">
+            <div class="toggle-gallery__item toggle-gallery__item--prev swiper-button-prev"></div>
+            <div class="toggle-gallery__item toggle-gallery__item--next swiper-button-next"></div>
+          </div>
 
-      </section>
+
+      </div></section>
 
     </main>
     <footer class="page-footer">
@@ -274,7 +345,7 @@
       </div>
     </footer>
 
-    <ul class="popup">
+    <!--     <ul class="popup">
       <li class="popup__list" id="popup-1">
         <div class="popup__block">
           <p>В 1926 году фонды архива разместились в Казанском соборе
@@ -335,7 +406,7 @@
           <button class="popup__btn-close">x</button>
         </div>
       </li>
-    </ul>
+    </ul> -->
 
   </div>
   <script src="js/swiper.min.js"></script>
