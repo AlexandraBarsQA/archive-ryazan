@@ -1,51 +1,147 @@
 .block-slider {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 417px;
-  display: flex;
-  flex-direction: column;
-  background: var(--bgi) no-repeat 0 0 / 100% auto, #392424;
+  //min-height: 417px;
+  min-height: 21.72vw;
+  background: var(--bgi) no-repeat 0 0 / 100% 18.54vw, #392424;
+
+  @media (max-width: 1600px) {
+    background: var(--bgi) no-repeat 0 0 / 100% 18.25vw, #392424;
+  }
+
+  @media (max-width: 1366px) {
+    background: var(--bgi) no-repeat 0 0 / 100% 18.75vw, #392424;
+  }
+
+  @media (max-width: 1280px) {
+    background: var(--bgi) no-repeat 0 0 / 100% 18.53vw, #392424;
+  }
+
+  @media (max-width: 992px) {
+    background: var(--bgi) no-repeat 0 0 / 160% auto, #392424;
+  }
+
+  @media (max-width: 840px) {
+    display: none;
+  }
 }
 
 .block-slider__wrap {
   display: flex;
   width: 100%;
+  height: 13.7vw;
   // background-color: rgba(0, 0, 0, 0.75);
   background-color: rgba(0, 0, 0, 0.75);
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 45px;
-
+  padding-left: 2vw;
+  padding-right: 2vw;
+  //margin-top: 45px;
+  margin-top: 2.34vw;
   min-width: 0; // параметр, если слайдер swiper вставляется внутрь флех-элемента, чтобы слайдер работал правильно.
+
+  @media (max-width: 992px) {
+    height: 31vw;
+    flex-direction: column;
+    margin-top: 4.34vw;
+  }
 }
 
 .block-slider__title {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  //width: 280px;
+  width: 14.58vw;
   font-family: inherit;
-  font-size: 25px;
+  font-size: clamp(18px, 1.3vw, 25px);
   line-height: 26 / 25 * 1;
   color: #cbcbcb;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-top: 1.3vw;
+  padding-bottom: 2.24vw;
+
+  @media (max-width: 1366px) {
+    width: 16.58vw;
+  }
+
+  @media (max-width: 1480px) {
+    padding-bottom: 1.8vw;
+  }
+
+  @media (max-width: 1280px) {
+    width: 14.58vw;
+    font-size: 15px;
+    padding-bottom: 1.24vw;
+  }
+
+  @media (max-width: 1180px) {
+    width: 15.58vw;
+  }
+
+  @media (max-width: 1080px) {
+    width: 20.58vw;
+    font-size: 17px;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .block-slider__title span {
   display: block;
-  font-size: 42px;
+  //font-size: 42px;
+  font-size: clamp(28px, 2.1vw, 42px);
   color: #a95919;
   font-variant: small-caps;
-  margin-top: 75px;
+  //margin-top: 75px;
+  //margin-top: 3.9vw;
+  margin-top: auto;
+
+  @media (max-width: 1366px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 32px;
+    margin-top: 10px;
+  }
 }
 
 .block-slider__line {
   position: absolute;
   width: 100%;
+  //height: 23px;
   height: 23px;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -45%);
+
+  @media (max-width: 1600px) {
+    height: 18px;
+  }
+
+  @media (max-width: 1280px) {
+    height: 15px;
+  }
+
+  @media (max-width: 1180px) {
+    height: 10px;
+    top: 47%;
+    transform: translate(-50%, -47%);
+  }
+
+  @media (max-width: 992px) {
+    height: 7px;
+    top: 23vw;
+  }
 }
 
 .block-slider__line::before {
@@ -57,4 +153,18 @@
   left: 50%;
   transform: translate(-50%, 0);
   background-color: rgba(225, 255, 255, 0.5);
+
+  @media (max-width: 1600px) {
+    height: 1.6px;
+    top: -9px;
+  }
+
+  @media (max-width: 1280px) {
+    height: 1.3px;
+    top: -7px;
+  }
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
 }

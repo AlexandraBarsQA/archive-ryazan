@@ -4,12 +4,37 @@
   color: #ffcc66;
   text-decoration: none;
   cursor: pointer;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .logo__img {
   position: relative;
   width: 95px;
   height: 110px;
+
+  @media (max-width: 1600px) {
+    width: 76px;
+    height: 87px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 63px;
+    height: 73px;
+  }
+
+  @media (max-width: 767px) {
+    width: 76px;
+    height: 87px;
+    margin-bottom: 15px;
+  }
 }
 
 .logo__img img {
@@ -23,14 +48,55 @@
 
 .logo p {
   font-family: inherit;
-  font-size: 34px;
+  //font-size: 34px;
+  font-size: clamp(20px, 1.5vw, 34px);
   font-weight: 300;
   font-variant: small-caps;
-  margin-left: 37px;
+  margin-left: 0.8vw;
+
+  @media (max-width: 1280px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 1080px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 21px;
+    margin-left: 1.2vw;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    margin-left: 0;
+  }
+
+  @media (max-width: 380px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 .logo--footer {
   width: 70px;
   height: 82px;
   margin-bottom: 10px;
+
+  @media (max-width: 1280px) {
+    width: 56px;
+    height: 65px;
+  }
+
+  @media (max-width: 767px) {
+    width: 70px;
+    height: 82px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }

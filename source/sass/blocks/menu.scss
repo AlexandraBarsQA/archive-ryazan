@@ -1,15 +1,93 @@
 .menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   align-items: center;
-  column-gap: 50px;
+  column-gap: 1.56vw;
+  //margin-left: 12vw;
+  margin-left: auto;
+
+  @media (max-width: 1600px) {
+    column-gap: 1.5vw;
+    //margin-left: 13vw;
+  }
+
+  @media (max-width: 1480px) {
+    //margin-left: 10vw;
+  }
+
+  @media (max-width: 1366px) {
+    //margin-left: 9vw;
+  }
+
+  @media (max-width: 1280px) {
+    column-gap: 1.3vw;
+    //margin-left: 6vw;
+  }
+
+  @media (max-width: 1180px) {
+    column-gap: 1.1vw;
+    //margin-left: 5vw;
+  }
+
+  @media (max-width: 1080px) {
+    column-gap: 1vw;
+    //margin-left: 4vw;
+  }
+
+  @media (max-width: 992px) {
+    column-gap: 2vw;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 840px) {
+    column-gap: 4.2vw;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+  }
 }
 
 .menu li {
   font-family: inherit;
-  font-size: 25px;
+  //font-size: 25px;
+  font-size: clamp(18px, 1.3vw, 25px);
   font-weight: 300;
   font-variant: small-caps;
+
+  @media (max-width: 1600px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 840px) {
+    font-size: 21px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+    margin-bottom: 13px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 17px;
+  }
 }
 
 .menu a {
@@ -32,4 +110,26 @@ a.menu__link-active::after {
   transform: translateX(-50%);
   transform: rotate(-45deg);
   background-color: #ff6666;
+
+  @media (max-width: 1600px) {
+    width: 18px;
+    height: 2.5px;
+    top: -9px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 15px;
+    height: 2px;
+    top: -7px;
+  }
+
+  @media (max-width: 767px) {
+    top: -2px;
+  }
+
+  @media (max-width: 480px) {
+    width: 18px;
+    height: 2.5px;
+    top: -4px;
+  }
 }

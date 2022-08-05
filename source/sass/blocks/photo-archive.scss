@@ -6,6 +6,16 @@
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @media (max-width: 1600px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 1280px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .photo-archive h2 {
@@ -15,12 +25,72 @@
   font-variant: small-caps;
   color: #392424;
   text-align: center;
+
+  @media (max-width: 1600px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 34px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 }
 
 .photo-archive__list {
   width: 100%;
-  min-height: 407px;
   //min-height: 407px;
+  min-height: 23.2vw;
+
   background-color: #392424;
   margin-top: 43px;
+
+  @media (max-width: 1600px) {
+    //min-height: 325px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1480px) {
+    min-height: 23.2vw;
+  }
+
+  @media (max-width: 1280px) {
+    //min-height: 273px;
+    min-height: 24.3vw;
+    margin-top: 25px;
+  }
+
+  @media (max-width: 1180px) {
+    min-height: 30.3vw;
+  }
+
+  @media (max-width: 992px) {
+    min-height: 32.3vw;
+  }
+
+  @media (max-width: 840px) {
+    min-height: 34.3vw;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 45.3vw;
+  }
+
+  @media (max-width: 680px) {
+    min-height: 48.3vw;
+  }
+
+  @media (max-width: 580px) {
+    min-height: 73.3vw;
+  }
+
+  @media (max-width: 480px) {
+    min-height: 90.3vw;
+  }
+
+  @media (max-width: 380px) {
+    min-height: 97.3vw;
+  }
 }

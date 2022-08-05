@@ -1,12 +1,58 @@
 .inset {
-  margin-top: 15px;
+  width: 554px;
+
+  @media (max-width: 1600px) {
+    width: 443px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 370px;
+  }
+
+  @media (max-width: 1080px) {
+    width: 34.2vw;
+  }
+
+  @media (max-width: 840px) {
+    width: 45vw;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 580px) {
+    width: 70vw;
+  }
 }
 
 .inset__img {
   position: relative;
-  width: 554px;
+  width: 100%;
   height: 554px;
   margin-bottom: 120px;
+
+  @media (max-width: 1600px) {
+    height: 443px;
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: 1280px) {
+    height: 370px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 1080px) {
+    height: 34.2vw;
+  }
+
+  @media (max-width: 840px) {
+    height: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 580px) {
+    height: 70vw;
+  }
 }
 
 .inset__img img {
@@ -21,21 +67,67 @@
 
 .inset p {
   font-family: inherit;
-  font-size: 34px;
+  font-size: clamp(24px, 1.8vw, 34px);
   line-height: 42 / 34 * 1;
   color: #996500;
   text-align: center;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 3.33vw;
+  padding-right: 3.33vw;
+
+  @media (max-width: 1600px) {
+    padding-left: 3.13vw;
+    padding-right: 3.13vw;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 840px) {
+    font-size: 21px;
+  }
+
+  /*   @media (max-width: 580px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  } */
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .inset__img::after {
   display: block;
   position: absolute;
   content: "";
-  width: 85%;
+  width: 480px;
   border-bottom: 4px dotted #d29e2b;
   left: 50%;
   transform: translateX(-50%);
   bottom: -65px;
+
+  @media (max-width: 1600px) {
+    width: 384px;
+    bottom: -56px;
+  }
+
+  @media (max-width: 1280px) {
+    //width: 321px;
+    width: 25vw;
+    bottom: -50px;
+  }
+
+  @media (max-width: 840px) {
+    width: 321px;
+  }
+
+  @media (max-width: 380px) {
+    width: 70vw;
+  }
 }

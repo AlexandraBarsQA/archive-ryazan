@@ -1,6 +1,32 @@
 .navigation-header {
+  //max-width: 1760px;
   padding-top: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-left: 1.7vw;
+  margin-right: 1.7vw;
   padding-bottom: 15px;
+
+  @media (max-width: 1600px) {
+    //max-width: 1408px;
+    margin-left: 1.3vw;
+    margin-right: 1.3vw;
+  }
+
+  @media (max-width: 840px) {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  @media (max-width: 1280px) {
+    //max-width: 1179px;
+  }
+
+  @media (max-width: 992px) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: 680px) {
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
 }

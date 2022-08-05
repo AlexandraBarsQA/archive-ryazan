@@ -4,10 +4,39 @@
 .page-footer__business {
   display: block;
   font-family: inherit;
-  font-size: 25px;
+  font-size: clamp(20px, 1.5vw, 25px);
   text-align: right;
   color: #392424;
-  padding: 80px;
+  //padding: 80px;
+  padding: 4.17vw;
+
+  @media (max-width: 1600px) {
+    padding: 3.8vw;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 20px;
+    padding: 3.5vw;
+  }
+
+  @media (max-width: 1180px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 23px;
+    line-height: 28 / 23 * 1;
+    text-align: center;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 21px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .page-footer__business a {

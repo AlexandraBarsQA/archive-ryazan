@@ -1,8 +1,29 @@
 .slider.swiper-container {
   display: flex;
-  width: 1465px;
-  height: 263px;
-  margin-left: 65px;
+  //width: 1465px;
+  //height: 263px;
+  width: 76.3vw;
+  height: 13.7vw;
+  margin-left: 3.39vw;
+
+  @media (max-width: 1600px) {
+    margin-left: 3.25vw;
+  }
+
+  @media (max-width: 1280px) {
+    margin-left: 3vw;
+  }
+
+  @media (max-width: 1180px) {
+    margin-left: 2vw;
+  }
+
+  @media (max-width: 992px) {
+    width: 90vw;
+    height: 15.7vw;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 
 .slider__wrapper {
@@ -15,40 +36,68 @@
   display: flex;
   width: auto;
   height: 100%;
-  align-items: center;
+  //align-items: center;
   cursor: pointer;
+
+  @media (max-width: 1080px) {
+  }
+
+  @media (max-width: 992px) {
+  }
 }
 
 .slider__item img {
+  width: auto;
   height: 100%;
 }
 
-.slider__item--1 img {
-  width: 316px;
-}
-
-.slider__item--2 img {
-  width: 170px;
-}
-
-.slider__item--3 img {
-  width: 275px;
-}
-
 .slider__item > div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   width: 190px;
   font-family: inherit;
-  font-size: 25px;
-  line-height: 26 / 25 * 1;
+  //font-size: 25px;
+  font-size: clamp(18px, 1.3vw, 25px);
+  line-height: 25 / 25 * 1;
   color: #cbcbcb;
-  margin-left: 25px;
+  margin-top: 2vw;
+  margin-left: 1.3vw;
+
+  @media (max-width: 1480px) {
+    margin-top: 1.3vw;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 17px;
+    margin-top: 1vw;
+  }
+
+  @media (max-width: 1080px) {
+    width: 16.5vw;
+    font-size: 16px;
+    margin-top: 1vw;
+  }
 }
 
 .slider__item h3 {
   position: relative;
   font-weight: 300;
   font-variant: small-caps;
-  margin-bottom: 75px;
+  //margin-bottom: 3.9vw;
+}
+
+.slider__item p {
+  padding-bottom: 2.24vw;
+  margin-top: auto;
+
+  @media (max-width: 1480px) {
+    padding-bottom: 1.8vw;
+  }
+
+  @media (max-width: 1280px) {
+    padding-bottom: 1.24vw;
+  }
 }
 
 .slider__item.swiper-slide h3::after {
@@ -56,9 +105,13 @@
   content: "";
   width: 2px;
   height: 18px;
-  bottom: -23px;
+  top: 65px;
   left: 0;
   background-color: rgba(225, 255, 255, 0.5);
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
 }
 
 .slider__toggle {

@@ -1,0 +1,98 @@
+.list-days {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: center;
+  column-gap: 55px;
+  row-gap: 55px;
+
+  @media (max-width: 1600px) {
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 1280px) {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  @media (max-width: 680px) {
+    column-gap: 35px;
+    row-gap: 35px;
+  }
+
+  @media (max-width: 580px) {
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+
+  @media (max-width: 480px) {
+    column-gap: 20px;
+  }
+
+  @media (max-width: 380px) {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 25px;
+  }
+}
+
+.list-days li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 49px;
+  font-size: clamp(24px, 1.8vw, 34px);
+  background-color: #ffecb2;
+  border: 4px solid #e8d39a;
+  border-radius: 10px;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+
+  @media (max-width: 1600px) {
+    width: 56px;
+    height: 39px;
+    font-size: 23px;
+  }
+
+  @media (max-width: 1280px) {
+    width: 47px;
+    height: 32px;
+    font-size: 21px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 680px) {
+    padding-top: 3px;
+  }
+
+  @media (max-width: 580px) {
+    padding-top: 2px;
+  }
+}
+
+.list-days li::before {
+  display: none;
+}
+
+.list-days a {
+  width: 100%;
+  height: 100%;
+  color: #924b35;
+  text-decoration: none;
+}
+
+li.list-days__item--disabled {
+  background-color: #e6e6e6;
+  border: 4px solid #e6e6e6;
+  cursor: default;
+}
+
+.list-days__item--disabled a {
+  color: #e6e6e6;
+  pointer-events: none;
+}

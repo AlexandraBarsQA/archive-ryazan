@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Archive Ryazan origion</title>
+  <link rel="preload" href="/fonts/bahnschrift.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="navigation-header">
+        <nav class="main-nav main-nav--closed">
+          <a class="main-nav__logo logo" href="index.html">
+            <div class="logo__img">
+              <img src="img/logo.svg" alt="Логотип Рязанский областной архив">
+            </div>
+            <p>государственный архив рязанской области</p>
+          </a>
+          <ul class="main-nav__menu menu">
+            <li>
+              <a href="about-archive.html" title="">об&nbsp;архиве</a>
+            </li>
+            <li>
+              <a href="new.html" title="">новости</a>
+            </li>
+            <li>
+              <a href="goods.html" title="">деятельность</a>
+            </li>
+            <li>
+              <a class="menu__link-active" title="">услуги</a>
+            </li>
+            <li>
+              <a href="#" title="">нса</a>
+            </li>
+            <li>
+              <a href="reading-room.html" title="">аис анро</a>
+            </li>
+          </ul>
+          <a class="main-nav__basket" href="order.html">
+            <span>5</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="form-search">
+        <form action="" method="get">
+          <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+          <input type="search" placeholder="Поиск по сайту" id="search-form-input" required="">
+          <button type="submit" class="form-search__btn" aria-label="Найти"></button>
+        </form>
+      </div>
+
+      <article class="content-main content-main--order">
+        <section class="content-main__info content-main__info--order">
+          <h1>—&nbsp;заявка в читальный зал&nbsp;—</h1>
+          <div class="order">
+            <ul class="order__list">
+              <li class="subtitle-main">Рабочее место № 1, читальный зал на Лермонтова, 9-а
+                <ul class="order__list-inner">
+                  <li>Отношение направляющей/курирующей работу организации</li>
+                  <li>Работа по заданию учреждения/организации</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="order__time">
+              <p>1 сентября 2022 г.</p>
+              <p>9:00—12:30</p>
+              <button class="order__btn"></button>
+            </div>
+          </div>
+          <div class="order">
+            <ul class="order__list">
+              <li class="subtitle-main">Рабочее место №33, читальный зал на Лермонтова, 9-а
+                <ul class="order__list-inner">
+                  <li>Отношение направляющей/курирующей работу организации</li>
+                  <li>Работа по заданию учреждения/организации</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="order__time">
+              <p>1 сентября 2022 г.</p>
+              <p>12:30—16:00</p>
+              <button class="order__btn"></button>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <section class="page-main__form-user form-user">
+        <h2>—&nbsp;оставить заявку&nbsp;—</h2>
+        <p>Для оформления заказа укажите, пожалуйста, ваши контактные данные.
+          <span>Все поля обязательны для заполнения!</span>
+        </p>
+        <form class="form-user__wrap" action="" method="post">
+          <fieldset class="field-item field-item--profile">
+            <label for="full-name">ФИО полностью:</label>
+            <input id="full-name" name="full-name" type="text">
+          </fieldset>
+          <fieldset class="field-item field-item--user">
+            <p>
+              <label for="tel">Номер телефона:</label>
+              <input id="tel" name="tel" type="tel">
+            </p>
+            <p>
+              <label for="mail">E-mail:</label>
+              <input id="mail" name="e-mail" type="email">
+            </p>
+            <p>
+              <label for="city">Город:</label>
+              <input id="city" name="city" type="text">
+            </p>
+          </fieldset>
+          <fieldset class="field-item field-item--theme">
+            <legend>Тема исследования:</legend>
+            <textarea name="user-text"></textarea>
+          </fieldset>
+          <p class="form-user__note">Нажимая на кнопку «Отправить», Вы даёте <a href="#" title="">согласие</a> на
+            обработку Ваших персональных
+            данных.</p>
+          <input class="form-user__btn btn" type="submit" value="отправить заявку">
+        </form>
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__nav nav-footer">
+        <article class="nav-footer__contacts">
+          <a class="logo logo--footer" href="index.html">
+            <img src="img/logo.svg" alt="">
+          </a>
+          <p class="nav-footer__info">© 2011–2022. ГАРО<br>
+            390027, Рязань, ул. Лермонтова, 9-а<br> Телефон: +7 (4912) 45-54-54<br>
+            Е-mail: <a class="nav-footer__mail" href="#" title="garo@ryazangov.ru">garo@ryazangov.ru</a> (приемная
+            директора)</p>
+          <a href="#" title="">Как добраться?</a>
+        </article>
+        <article>
+          <ul class="breadcrumb">
+            <li>
+              <a href="about-archive.html" title="">Об Архиве</a>
+            </li>
+            <li>
+              <a href="new.html" title="">Новости</a>
+            </li>
+            <li>
+              <a href="#" title="">Контакты</a>
+            </li>
+            <li class="nav-footer__map">
+              <a href="#" title="">Карта сайта</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#" title="">Деятельность</a>
+            </li>
+            <li>
+              <a href="#" title="">Услуги</a>
+            </li>
+            <li>
+              <a href="#" title="">НСА</a>
+            </li>
+          </ul>
+        </article>
+        <article class="nav-footer__archives">
+          <ul class="breadcrumb">
+            <li>
+              <a href="#" title="">Архивы России</a>
+            </li>
+            <li>
+              <a href="#" title="">Главное Архивное управление Рязанской области</a>
+            </li>
+          </ul>
+          <span>Данный сайт является единственным официальным сетевым
+            ресурсом Государственного архива Рязанской области.
+            За достоверность другой информации о нашем учреждении,
+            представленной на просторах Интернета,
+            мы ответственности не несем.</span>
+        </article>
+      </div>
+      <div class="page-footer__business">
+        <p>В вашем бизнесе всё <a href="#" title="">работает само</a></p>
+      </div>
+
+
+    </footer>
+  </div>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
